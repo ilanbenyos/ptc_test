@@ -5,7 +5,10 @@
   "scripts": {
     "client:i": "cd client && npm i",
     "client:dev": "cd client && npm run dev",
-    "client:build": "cd client && npm run build"
+    "server:i": "cd server && npm i",
+    "server:run": "cd server && node index.js",
+    "install:all": "npm run client:i && npm run server:i"
+
   },
   "dependencies": {
    

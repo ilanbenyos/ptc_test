@@ -12,6 +12,7 @@
 			"program": "${workspaceFolder}\\server\\index",
 			"cwd": "${workspaceFolder}/server",
 			"skipFiles": ["<node_internals>/**/*.js"]
+
 		}
     ]
 }

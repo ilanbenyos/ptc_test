@@ -1,10 +1,8 @@
 import Vue from 'vue'
 import App from './App.vue'
 import router from './router'
-// import googleMap from "./plugins/googleMap";
 import * as VueGoogleMaps from 'vue2-google-maps';
 
-// Vue.use(googleMap);
 
 
 
