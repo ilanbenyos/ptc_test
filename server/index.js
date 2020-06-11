@@ -4,8 +4,9 @@ require('dotenv').config()
 const app = express();
 const cors = require('cors');
 const axios = require('axios');
-// const FBToken='EAAMdjmZCduS0BAAESLyn6ZA5GNRZBvnlph2VZBnqFn5a1SmgHqdVZBPZA78lg70jY1f4LMiW2EhSegziZCOIpE2uofP0QA6RVeehh3hZCsdaGmBk3pcpAC5knwsLZBWxIZC7hFEzqS5kaz5FYPUxy11usZAmWGxufio8O1vHQkdLwUq01gUbMZA5YldZB';
-const FBToken= process.env.FBToken;
+let  token='EAAMdjmZCduS0BAAESLyn6ZA5GNRZBvnlph2VZBnqFn5a1SmgHqdVZBPZA78lg70jY1f4LMiW2EhSegziZCOIpE2uofP0QA6RVeehh3hZCsdaGmBk3pcpAC5knwsLZBWxIZC7hFEzqS5kaz5FYPUxy11usZAmWGxufio8O1vHQkdLwUq01gUbMZA5YldZB';
+// I have it in env File and dotenv, you don't so here it is.
+const FBToken= process.env.FBToken || token;
 if(!FBToken){
     console.error("============MAJOR PROBLEM===============");
     throw "no FBToken in env file."
